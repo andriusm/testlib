@@ -34,5 +34,5 @@ func New(config Config) (*MyTestLib, error) {
 func (tlib *MyTestLib) DoThings(abc string, num int) string {
 	tlib.logger.Debug("Doing things")
 
-	return fmt.Sprintf("%s, %s #%d", tlib.greeting, abc, num)
+	return fmt.Sprintf("%s, %s! You're #%d", tlib.greeting, abc, num)
 }
